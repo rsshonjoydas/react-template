@@ -1,4 +1,5 @@
 import Image from './images/logo.png';
+import Logo from './images/logo.svg';
 import './styles.css';
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <h1>React TypeScript Webpack Stater Template</h1>
       <img src={Image} alt="React Logo" width="300" />
+      <img src={Logo} alt="React Logo" width="300" />
     </>
   )
 }
