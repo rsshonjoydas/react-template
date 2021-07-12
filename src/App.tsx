@@ -1,3 +1,4 @@
+import './styles.css';
 const App = () => {
   return <h1>React TypeScript Webpack Stater Template</h1>
 }
