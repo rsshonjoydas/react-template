@@ -1,6 +1,6 @@
 import Image from "./images/logo.png";
 import Logo from "./images/logo.svg";
-import "./styles.css";
+import "./styles.scss";
 
 const App = () => {
   return (

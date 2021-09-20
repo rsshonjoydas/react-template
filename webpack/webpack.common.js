@@ -19,7 +19,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
+        test: /\.(css|sass|scss)$/,
         use: ["style-loader", "css-loader"],
       },
       {
@@ -38,7 +38,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "..", "./src/index.html"),
+      template: path.resolve(__dirname, "..", "./public/index.html"),
     }),
     new CopyPlugin({
       patterns: [{ from: "src", to: "dest" }],
