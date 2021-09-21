@@ -19,7 +19,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(css|sass|scss)$/,
+        test: /\.(css|scss|sass)$/,
         use: ["style-loader", "css-loader"],
       },
       {
@@ -35,6 +35,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "..", "./build"),
     filename: "bundle.js",
+  },
+  devServer: {
+    historyApiFallback: true
   },
   plugins: [
     new HtmlWebpackPlugin({
